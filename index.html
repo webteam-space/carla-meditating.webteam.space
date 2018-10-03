@@ -20,8 +20,8 @@
       var y_icon = 0;
       var stepX = 1;
       var stepY = 1;
-      var size_x = 23;
-      var size_y = 22;
+      var size_x = 2;
+      var size_y = 2;
       var canvas_size_x = 480;
       var canvas_size_y = 320;
       var anim_img = null;
@@ -33,7 +33,7 @@
         ctx = canvas.getContext("2d");
         anim_img = new Image(size_x, size_y);
         anim_img.onload = function() { setInterval('myAnimation()', 10); }
-        anim_img.src = 'https://pbs.twimg.com/profile_images/3352183391/a16302aab7bd8742ad3e39a75454008a_normal.jpeg';
+        anim_img.src = 'carla.png';
       }
       function myAnimation() {
         ctx.clearRect(0, 0, canvas_size_x, canvas_size_y);
